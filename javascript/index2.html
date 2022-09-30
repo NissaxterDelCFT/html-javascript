@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>La Nota de PEPITO es</h1>
+    <label id="label_1" for=""></label>
+    <script>
+        let nota1 = 10;
+        let nota2 = 10;
+        let nota3 = 50;
+        let nota4 = 20;
+        let nota5 = 70;
+
+        let promedio=0;
+
+        promedio=(nota1 + nota2 + nota3 + nota4 + nota5)/5;
+
+        if (promedio < 4){
+            console.log("Reprobo")
+        }
+
+        else if (promedio > 7){
+            console.log("Valor o Nota incorrecta")
+        }
+        else{
+            console.log("Aprobo")
+        }
+        console.log("El promedio es: " + promedio);
+        let label_numero = document.getElementById("label_1");
+        label_numero.innerHTML = promedio;
+    </script>
+</body>
+</html>

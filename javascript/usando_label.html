@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usando Label</h1>
+    <label id="label_1" for=""></label>
+    <button onclick="enviarDatos()">Enviar</button>
+    <script>
+        function enviarDatos(){
+            let nombre = document.getElementsByName("nombre")[0].value;
+            console.log(nombre);
+        }
+        let numero=33;
+        let label_numero = document.getElementById("label_1");
+        label_numero.innerHTML = numero;
+    </script>
+</body>
+</html>
